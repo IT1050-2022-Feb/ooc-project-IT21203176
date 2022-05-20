@@ -1,0 +1,49 @@
+//LocalClient.h
+
+# include "Apartment.h"
+# include "Client.h"
+class LocalClient	:public Client
+{
+	private :
+		int noOfApartments;
+		
+	public:
+		LocalClient();
+		LocalClient(int cid, const char cName[], const char cEmail[],
+		int cContNo[], int noOfApartments);
+		void searchApartment(Apartment * pApt);
+		void downloadFlPlan(Apartment * pApt);
+		~Client();
+};
+
+
+//LocalClient.cpp
+
+#include "LocalClient.h"
+LocalClient::LocalClient()
+
+{
+	noOfApartments = 0;
+}
+
+LocalClient::LocalClient(int cid, const char cName[], const char cEmail[],
+		int cContNo[], int noOfApartments) :Client(usName, 
+usPwd, id, name, address, email, contNo)
+
+{
+	noOfApartments = pnoOfApartments;
+}
+
+void LocalClient::downloadFlPlan(Apartment* pdownloadApt)
+{
+	if (noOfApartments < SIZE)
+	{
+		downloadApt[noOfApartments] = pdownloadApt;
+		noOfApartments++;
+	}
+}
+
+LocalClient::~LocalClient()
+{
+//Destructor 
+}
