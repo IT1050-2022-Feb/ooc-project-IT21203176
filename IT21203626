@@ -1,0 +1,98 @@
+//Foreign_Client.h
+
+#include<cstring>
+
+class Foreign_clients
+{
+private:
+	char Fid[30];
+	char F_Name[30];
+	char F_Address[30];
+	char F_Email[30];
+	char F_Contact[30];
+
+public:
+	Foreign_clients();
+	void get_Client_Details(char for_id[30], char for_name[30], char for_address[30], char for_contact[30]);
+	void get_Email();
+	~Foreign_clients();
+};
+
+//Foreign_Client.cpp
+
+#include "Foreign_Client.h"
+#include<cstring>
+
+Foreign_clients::Foreign_clients() 
+{
+	strcpy(Fid, "");
+	strcpy(F_Name, "");
+	strcpy(F_Address, "");
+	strcpy(F_Email, "");
+	strcpy(F_Contact, "");
+
+}
+
+void Foreign_clients::get_Client_Details(char for_id[30], char for_name[30], char for_address[30], char for_contact[30])
+{
+
+}
+
+void Foreign_clients::get_Email()
+{
+
+}
+
+Foreign_clients::~Foreign_clients()
+{
+
+}
+
+//Language.h
+
+#include<cstring>
+
+class Language
+{
+	private:
+		char c_language[50];
+		
+	public:
+		Language();
+		void choose_lang();
+		void change_lang();
+		void display();
+		~Language();
+
+};
+
+//Language.cpp
+
+#include "Language.h"
+#include<cstring>
+
+Language::Language()
+{
+	strcpy(c_language, "");
+
+}
+
+void Language::choose_lang()
+{
+			
+}
+
+void Language::change_lang()
+{
+				
+}
+
+void Language::display()
+{
+				
+}
+
+Language::~Language()
+{
+				
+}
