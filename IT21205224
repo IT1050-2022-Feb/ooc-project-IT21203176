@@ -1,0 +1,75 @@
+//Receptionist.h
+# include "Receptionist.h"
+class Receptionist
+{
+	private:
+		char recName;
+		int recID;
+		char recEmail;
+		int recContNo;
+		char recUserName;
+		char recPassword;
+		int recNic;
+		int Date;
+		int Time;
+		
+	
+	public:
+		Receptionist();
+		Receptionist(const char recName[], int recID[], const char recEmail[], int recContNo[],
+		const char recUserName[], const char recPassword[], int recNic[], int Date[], int Time[] );
+		void viewDetails();
+		void sendDetails();
+		void setDate(int date);
+		void setTime(int time);
+		~Receptionist();
+
+};
+
+
+//Receptionist.cpp	
+ 
+ #include "Receptionist.h"
+
+	Receptionist::Receptionist()
+	{
+		char recName;
+		int recID;
+		char recEmail;
+		int recContNo;
+		char recUserName;
+		char recPassword;
+		int recNic;
+		int Date;
+		int Time;
+	}
+	
+	Receptionist::Receptionist(const char precName[], int precID[], const char precEmail[],
+	int precContNo[], const char precUserName[], const char precPassword[], int recNic[],
+	int pdate[], int ptime[])
+	
+	void Receptionist::viewDetails()
+	{
+				
+	}
+	
+	void Receptionist::setDate(int date)
+	{
+		
+	}
+		
+	void Receptionist::setTime(int time)
+	{
+		
+	}
+	
+	void Receptionist::sendDetails()
+	{
+		
+	}
+Receptionist::~Receptionist()
+{
+//Destructor
+
+}
+
