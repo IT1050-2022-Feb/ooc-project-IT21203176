@@ -1,0 +1,48 @@
+//Main.cpp
+
+#include "Apartment.h"
+#include "Client.h"
+#include "ForeignClient.h"
+#include "manager.h"
+#include "Appointment.h"
+#include "Receptionist.h"
+#include "Investor.h"
+#include "LocalClient.h"
+
+#include <iostream>
+using namespace std;
+int main()
+{
+     //---- Object creation ------ 
+ 
+ 
+    Client* rg = new Client(); // Object -
+	Client class
+ 	Client* LocalClient = new LocalClient(); // Object - LocalClient 
+	class
+ 	Client* ForeignClient = new ForeignClient(); // Object - ForeignClient 
+ 	Apartment* apt = new Apartment(); // Object - Apartment class
+ 	Appointment* appoint = new Appointment(); // Object - Appointment class
+ 	Receptionist* recept = new Receptionist(); // Object - Receptionist class
+ 	Investor* investor = new Investor(); // Object - Investor class
+ 	Manager* manager = new Manager(); // Object - Manager class
+
+    
+     manager->login();     manager->displaySellerDetails(); 
+     receptionist->login();
+	 investor->login();      
+ 
+    apt->updateAptDetails();
+ 	apt->checkAvailability();
+	apt->displayAptDetails();
+ 
+    renting->addRenting();     renting->displaySelPrice(); 
+ 
+    booking->addBooking();     booking->displayBookPrice(); 
+ 
+    report->bookingDetailsReport();     report->rentingDetailsReport();     report->paymentDetailsReport(); 
+ 
+ 
+    //----Delete Dynamic objects------     delete rg;     delete Client;     delete ForeignClient;     delete LocalClient;     delete apt;     delete appoint;     delete recept; 	delete investor;	delete manager;
+      return 0; 
+} 
