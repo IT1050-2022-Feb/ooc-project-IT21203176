@@ -1,0 +1,69 @@
+//manager.h
+class Manager {
+      private:
+            char manager_name[50];
+            int manager_id;
+            const char manager_email[25];
+            int manager_ContNo;
+            char manager_username[20];
+            const char manager_password[20];
+            char manager_NIC[12];
+
+      public:
+            Manager();
+
+            Manager(char amanager_name[], const char amanager_email[], int amanager_ContNo, char amanager_username[], const char amanager_password[], char amanager_NIC[]);
+            void login();
+            void logout();
+            void checkLoginDetails();
+            void manage();
+            ~Manager();
+};
+
+//manager.cpp
+Manager::Manager(){
+  
+  strcpy(manager_name,"");
+  manager_id = 0;
+  strcpy(manager_email,"");
+  manager_ContNo = 0;
+  strcpy(manager_username,"");
+  strcpy(manager_password,"");
+  strcpy(manager_NIC,"");
+  
+}
+
+Manager::Manager(char amanager_name[], const char 
+      amanager_email[], int amanager_ContNo, char 
+      amanager_username[], const char amanager_password[], char 
+      amanager_NIC[]);{
+
+  strcpy(manager_name,amanager_name);
+  strcpy(manager_email,amanager_email);
+  strcpy(manager_username,amanager_username);
+  strcpy(manager_password,amanager_password);
+  strcpy(manager_NIC,amanager_NIC);
+   
+}
+
+void Manager::login()
+{
+  
+}
+void Manager::logout()
+{
+  
+}
+void Manager::checkLoginDetails()
+{
+  
+}
+void Manager::manage()
+{
+  
+}
+
+Manager::~Manager()
+{
+  
+}
