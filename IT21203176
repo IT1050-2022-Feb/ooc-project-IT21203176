@@ -1,0 +1,231 @@
+//Apartment.h
+
+#include "Apartment.h"
+#include "Client.h"
+
+#define SIZE1 2
+
+class Apartment
+{
+private:
+	int apartmentType;
+	char apartmentFacili[50];
+	char apartmentStatus[50];
+	int count = 0;
+	Appointment* appointment[SIZE1];
+	LocalClient* lclient;
+	ForeignClient* fclient;
+	LocalClient* lclient;
+	Investor* investor;
+	
+public:
+	Apartment();
+	Apartment(int appointment1, LocalClient* plclient, ForeignClient*pfclient,
+	 Investor* pinvestor );
+	void apartmentDetails(int aptType, const char aptFacili const char aptStatus, 
+	LocalClient* plclient, ForeignClient*pfclient, Investor* pinvestor );
+	void deleteApartmentDetails();
+	void updateApartmentDetails();
+	void displayApartmentDetails();
+	void checkAvailability();
+	~Apartment();
+};
+
+
+//Apartment.cpp
+
+#include "Apartment.h"
+#include "Appointment.h"
+#define SIZE 2
+
+Apartment::Apartment()
+{
+	
+}
+
+Apartment::Apartment(int appointment1, int * plclient, int*pfclient,
+	int* pinvestor )
+	
+{
+	
+	LocalClient = plclient;
+	ForeignClient = pfclient;
+	Investor = pinvestor;
+}
+
+	void apartmentDetails(int aptType, const char aptFacili, const char aptStatus, 
+	LocalClient* plclient, ForeignClient*pfclient, Investor* pinvestor )
+
+{
+	
+}
+
+	void Apartment::deleteApartmentDetails()
+{
+	
+}
+
+	void Apartment::updateApartmentDetails()
+{
+	
+}
+
+	void Apartment::displayApartmentDetails()
+{
+	
+}
+
+	void Apartment::checkAvailability()
+{
+	
+}
+
+Apartment::~Apartment()
+{
+//Destructor 
+	for (int i = 0; i < SIZE1; i++)
+	{
+		delete book[i];
+	}
+	for (int i = 0; i < SIZE2; i++)
+	{
+		delete sell[i];
+	}
+	
+	
+}
+
+
+
+
+
+//Investor.h
+
+# include "Investor.h"
+class Investor
+{
+	private:
+		char inveName;
+		int inveID;
+		char inveEmail;
+		int inveContNo;
+		char inveUserName;
+		char invePassword;
+		int inveNic;
+
+	public:
+		Investor();
+		Investor(const char inveName[], int inveID[], const char inveEmail[], int inveContNo[],
+		const char inveUserName[], const char invePassword[], int inveNic[] );
+		void viewDetails();
+		void downloadDocumentation();
+		void changeLanguage();
+		~Investor();
+
+};
+
+
+//Investor.cpp
+
+#include "Receptionist.h"
+
+	Receptionist::Receptionist()
+	{
+		char inveName;
+		int inveID;
+		char inveEmail;
+		int inveContNo;
+		char inveUserName;
+		char invePassword;
+		int inveNic;
+	}
+	
+	Investor::Investor(const char pinveName[], int pinveID[], const char pinveEmail[],
+	int pinveContNo[], const char pinveUserName[], const char pinvePassword[], int recNic[])
+	
+	void Investor::viewDetails()
+	{
+				
+	}
+	
+	void Investor::downloadDocumentation()
+	{
+		
+	}
+	
+	void Investor::changeLanguage()
+	{
+		
+	}
+Investor::~Investor()
+{
+//Destructor
+
+}
+
+
+
+
+
+//Appointment.h
+
+#include "Appointment.h"
+
+class Appointment {
+	private:
+		char appointmentID[10];
+		int Time[20];
+		int Date[20];
+		
+	public:
+		Appointment();
+		Appointment(int appointmentID, int Time, int Date);
+		void setAppointment();
+		void setDate(int date);
+		void setTime(int time);
+		~Appointment();
+};
+
+
+
+//Appointment.cpp
+
+#include "Appointment.h"
+
+	Appointment::Appointment()
+	{
+		char appointmentID[10];
+		int Time[20];
+		int Date[20];
+	}
+	
+	Appointment::Appointment(const char appointmentID[], int Time, int Date)
+	
+	{
+		Appointment();
+		void setAppointment();
+		void setDate(int date);
+		void setTime(int time);
+		~Appointment();
+	}
+	
+	void Appointment::setAppointment()
+	{
+				
+	}
+	
+	void Appointment::setDate(int date)
+	{
+		
+	}
+		
+	void Booking::setTime(int time)
+	{
+		
+	}
+Appointment::~Appointment()
+{
+//Destructor
+
+}
+
